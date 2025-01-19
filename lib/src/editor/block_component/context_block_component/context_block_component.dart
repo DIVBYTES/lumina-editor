@@ -169,13 +169,13 @@ class _ContextBlockComponentWidgetState
                   textAlign: alignment?.toTextAlign ?? textAlign,
                   placeholderText: 'Add contextual note...',
                   textSpanDecorator: (textSpan) => textSpan.updateTextStyle(
-                    textStyle.copyWith(
+                    textSpan.style?.copyWith(
                       color: colorScheme.onPrimaryContainer,
                     ),
                   ),
                   placeholderTextSpanDecorator: (textSpan) =>
                       textSpan.updateTextStyle(
-                    placeholderTextStyle.copyWith(
+                    textSpan.style?.copyWith(
                       color: colorScheme.onPrimaryContainer.withValues(
                         alpha: 0.6,
                       ),

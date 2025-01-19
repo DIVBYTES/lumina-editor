@@ -208,7 +208,7 @@ class _TransitionBlockComponentWidgetState
           ),
         ),
         placeholderTextSpanDecorator: (textSpan) => textSpan.updateTextStyle(
-          placeholderTextStyle.copyWith(
+          textSpan.style?.copyWith(
             color: noteTextColor.withValues(alpha: 0.6),
             fontSize: 12.0 * textScaleFactor,
           ),
